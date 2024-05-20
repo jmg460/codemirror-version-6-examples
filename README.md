@@ -1,4 +1,4 @@
-CodeMirror is awesome! It is super-extensible! In that regard, the documentation examples are not detailed enough to list every users' specific use and it can be very hard to get started, even if you know CodeMirror v5. I created these to provide well-documented and working examples because they didn't seem to exist when I went looking.
+CodeMirror is awesome! It is super-extensible! In that regard, the documentation examples are not detailed enough to list every user's specific use and it can be challenging to get started even if you know and use CodeMirror v5. I created these to provide well-documented and working examples because they didn't seem to exist when I went looking.
 
 Link to working examples: 
 
