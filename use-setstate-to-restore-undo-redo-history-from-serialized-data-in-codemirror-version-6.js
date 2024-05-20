@@ -7,7 +7,7 @@ import { EditorState } from '@codemirror/state';
 import { lineNumbers, EditorView } from '@codemirror/view';
 import { history, historyField } from "@codemirror/commands";
 
-// lineNumbers extension proves that the extensions are loading in the oldState
+// lineNumbers extension proves that the extensions are loading in oldState
 const extensions = [ minimalSetup, history(), lineNumbers() ];
 
 // initial state
@@ -26,14 +26,14 @@ const view = new EditorView({
 // stringified serialized data with a starting value of "initial content" that was changed to "new content" ending with the selection "new" and the cursor at position 3
 const serializedData = '{"doc":"new content","selection":{"ranges":[{"anchor":0,"head":3}],"main":0},"history":{"done":[{"selectionsAfter":[{"ranges":[{"anchor":0,"head":0}],"main":0},{"ranges":[{"anchor":15,"head":15}],"main":0}]},{"changes":[[1,"initial content"],[10]],"startSelection":{"ranges":[{"anchor":0,"head":15}],"main":0},"selectionsAfter":[{"ranges":[{"anchor":11,"head":11}],"main":0},{"ranges":[{"anchor":0,"head":1}],"main":0}]}],"undone":[]}}';
 
-// recreate the oldState with serializedState data
+// recreate oldState with serializedState data
 const oldState = EditorState.fromJSON(
 	JSON.parse(serializedData),
 	{ extensions: extensions },
 	{ history: historyField }
 );
 
-// use setState to load the oldState
+// use setState to load oldState
 // the following outputs "new content" and initiating UNDO will allow you to restore the original starting value of "initial content"
 // you will lose the startState doc content and history
 view.setState(oldState);
