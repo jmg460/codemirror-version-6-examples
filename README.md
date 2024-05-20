@@ -1,4 +1,4 @@
-Codemirror is awesome! The documentation is not... user-friendly for beginners and it can be very hard to get started. I created these to provide well documented and working examples because they didn't seem to exist when I went looking.
+Codemirror is awesome! The documentation is not... user-friendly for beginners and it can be very hard to get started. I created these to provide well-documented and working examples because they didn't seem to exist when I went looking.
 
 Link to working examples: 
 
