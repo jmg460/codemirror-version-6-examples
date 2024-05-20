@@ -1,5 +1,5 @@
 /*
-Codemirror is awesome! The documentation is not user-friendly for beginners. It is very hard to get started. I thought the following code was worth sharing because it took a little longer than normal to figure out how to set up the EditorState fromJSON and how to use historyField.
+I thought the following code was worth sharing because it took a little longer than normal to set up the EditorState fromJSON using the historyField to allow UNDO and REDO to work properly.
 */
 
 import { minimalSetup } from "codemirror";
